@@ -662,6 +662,7 @@
         <div class="section-title"><h2>Procesos de contratación</h2><div class="line"></div></div>
         <div class="panel">
           <p class="muted">Todos los procesos continúan desarrollándose bajo criterios de transparencia, objetividad y cumplimiento de las decisiones adoptadas por el Consejo de Administración y la Asamblea General.</p>
+          <p class="muted">El pasado jueves 23 de julio se realizó una reunión con los elegidos por asamblea del Proyecto General de Fachadas, Cubiertas y Puntos Fijos y de la Interventoría, con el fin de dar inicio a los procesos contractuales correspondientes con el Consejo de Administración.</p>
           <table>
             <thead><tr><th>Fecha</th><th>Contrato / Proceso</th><th>Estado / Prioridad</th></tr></thead>
             <tbody id="contratos-body"></tbody>
@@ -774,11 +775,11 @@ const DATA = {
   ],
 
   proximosContratos: [
-    { fecha: "Julio 2026", contrato: "Proyecto General de Fachadas, Cubiertas y Puntos Fijos", estado: "proceso", label: "Etapa final de selección" },
-    { fecha: "Julio 2026", contrato: "Interventoría del proyecto de fachadas, cubiertas y puntos fijos", estado: "proceso", label: "Selección en proceso" },
-    { fecha: "Julio 2026", contrato: "Profesional en Contaduría Pública", estado: "proceso", label: "En selección — servicio temporal con contadora actual" },
-    { fecha: "Julio 2026", contrato: "Contrato MAZOC — Club House", estado: "ok", label: "Suscrito y en ejecución" },
-    { fecha: "Julio 2026", contrato: "Abogado de cobro de cartera", estado: "ok", label: "Contratado" }
+    { fecha: "Julio 2026", contrato: "Proyecto General de Fachadas, Cubiertas y Puntos Fijos", estado: "ok", label: "Elegido por asamblea del 19 de julio de 2026" },
+    { fecha: "Julio 2026", contrato: "Interventoría del proyecto de fachadas, cubiertas y puntos fijos", estado: "ok", label: "Elegido por asamblea del 19 de julio de 2026" },
+    { fecha: "Julio 2026", contrato: "Profesional en Contaduría Pública", estado: "ok", label: "Se definió la negociación con el auxiliar contable y Sofía para continuidad de sus labores bajo el mismo modelo hasta diciembre de 2026" },
+    { fecha: "Julio 2026", contrato: "Contrato MAZOC — Club House", estado: "proceso", label: "Decisión tomada por parte del Consejo en votación; revisión y ajustes al contrato realizados tanto por la Administración como por el Consejo de Administración; ajustes enviados nuevamente a MAZOC para proceder con firma" },
+    { fecha: "Julio 2026", contrato: "Abogado de cobro de cartera", estado: "proceso", label: "Se debe revisar la continuidad de los abogados junto con el Consejo" }
   ],
 
   reparaciones: [
@@ -793,15 +794,15 @@ const DATA = {
 
   tareas: [
     { no: 1, actividad: "Vincular el tercer servicio público al sistema de débito automático.", responsable: "Administración", estado: "80% de avance — 2 de 3 servicios inscritos", tipo: "proceso" },
-    { no: 2, actividad: "Culminar el proceso de selección del Proyecto General de Fachadas, Cubiertas y Puntos Fijos.", responsable: "Administración / Consejo", estado: "En etapa final de selección", tipo: "proceso" },
-    { no: 3, actividad: "Culminar el proceso de selección de la interventoría del proyecto.", responsable: "Administración / Consejo", estado: "Selección en proceso", tipo: "proceso" },
-    { no: 4, actividad: "Definir la contratación del profesional en Contaduría Pública.", responsable: "Administración", estado: "En selección — servicio temporal vigente", tipo: "proceso" },
-    { no: 5, actividad: "Continuar el seguimiento a casos heredados del Comité de Convivencia.", responsable: "Administración / Comité de Convivencia", estado: "Control y revisión de expedientes en curso", tipo: "proceso" },
-    { no: 6, actividad: "Ejecutar el programa de fumigación y control integral de plagas.", responsable: "Administración", estado: "Gestiones de contratación iniciadas", tipo: "proceso" },
-    { no: 7, actividad: "Preparar y ejecutar las actividades derivadas de la Asamblea Extraordinaria del 19 de julio de 2026.", responsable: "Administración / Consejo / Área Contable", estado: "Reuniones de trabajo realizadas; actas elaboradas", tipo: "ok" },
-    { no: 8, actividad: "Fortalecer el cobro de cartera (prejurídico y jurídico).", responsable: "Abogado de cartera / Administración", estado: "Nuevo abogado contratado", tipo: "ok" },
-    { no: 9, actividad: "Redistribuir el presupuesto aprobado para la vigencia 2026 (sin incrementar cuotas).", responsable: "Administración / Revisoría Fiscal", estado: "Propuesta presentada en Asamblea Extraordinaria", tipo: "ok" },
-    { no: 10, actividad: "Aplicar la suspensión de zonas comunes no esenciales a propietarios en mora.", responsable: "Administración", estado: "Medida vigente desde julio 2026", tipo: "ok" }
+    { no: 2, actividad: "Culminar el proceso de selección del Proyecto General de Fachadas, Cubiertas y Puntos Fijos.", responsable: "Administración / Consejo", estado: "Realizado", tipo: "ok" },
+    { no: 3, actividad: "Culminar el proceso de selección de la interventoría del proyecto.", responsable: "Administración / Consejo", estado: "Realizado y elegido por asamblea", tipo: "ok" },
+    { no: 4, actividad: "Definir la contratación del profesional en Contaduría Pública.", responsable: "Administración", estado: "Realizado y negociado", tipo: "ok" },
+    { no: 5, actividad: "Continuar el seguimiento a casos heredados del Comité de Convivencia.", responsable: "Comité de Convivencia", estado: "Control y revisión de expedientes en curso", tipo: "proceso" },
+    { no: 6, actividad: "Ejecutar el programa de fumigación y control integral de plagas.", responsable: "Administración", estado: "Se ejecutará antes del 15 de agosto", tipo: "proceso" },
+    { no: 7, actividad: "Preparar y ejecutar las actividades derivadas de la Asamblea Extraordinaria del 19 de julio de 2026.", responsable: "Administración / Consejo / Área Contable", estado: "Cuadro de tareas post asamblea, entregado al consejo", tipo: "ok" },
+    { no: 8, actividad: "Fortalecer el cobro de cartera (prejurídico y jurídico).", responsable: "Administración", estado: "Campañas de normalización de cartera realizadas el 15 y 25 de julio", tipo: "ok" },
+    { no: 9, actividad: "Redistribuir el presupuesto aprobado para la vigencia 2026 (sin incrementar cuotas).", responsable: "Administración / Contabilidad", estado: "Propuesta presentada en Asamblea Extraordinaria", tipo: "ok" },
+    { no: 10, actividad: "Aplicar la suspensión de zonas comunes no esenciales a propietarios en mora.", responsable: "Administración", estado: "Medida vigente a partir del 1 de agosto, según lo informado en la Asamblea Extraordinaria", tipo: "ok" }
   ],
 
   cartera: {
